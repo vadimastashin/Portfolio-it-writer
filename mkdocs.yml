@@ -1,1 +1,95 @@
-site_name: Potfolio it-writer
+site_name: Портфолио копирайтера
+
+site_description: "Статьи в портфолио технического копирайтера"
+theme:
+  name: material
+  logo: logo.svg
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+  #- navigation.sections
+  - navigation.path # Хлебные крошки
+  - navigation.indexes
+  #- navigation.tabs # Верхнее меню
+  #- navigation.tabs.sticky 
+  #- Navigation sections 
+  #- navigation.expand 
+  #- toc.integrate 
+  - navigation.instant
+  - navigation.top
+  - search.suggest
+  - search.highlight
+  - content.code.copy
+
+  language: ru
+  palette:
+  - scheme: default
+    toggle:
+      icon: material/weather-sunny
+      name: Выключить солнышко
+    primary: blue
+    accent: purple
+
+  - scheme: slate
+    toggle:
+      icon: material/weather-night
+      name: Позвать солнышко
+    primary: deep purple
+    accent: blue
+
+nav:
+
+- Главная страница: index.md
+- Большие данные:
+  - Большие данные/index.md
+  - Java и перспективы технологий больших данных: Большие данные/Java и переспективы технологий BD.md
+  - Новые возможности NoSQL: Большие данные/NoSQL - новые возможности.md
+  - Spark vs Hadoop vs Storm: Большие данные/Spark_Hadoop_Storm.md
+  - Apach 1.6: Большие данные/Apach1_6.md
+- Дата-центры:
+  - Дата-центры/index.md
+  - Аутсорсинг it-услуг: Дата-центры/Аутсорсинг it-услуг.md
+  - Развитие дата-центров: Дата-центры/Развитие дата-центров.md
+  - Стандарты и уровни: Дата-центры/Стандарты и уровни.md
+- Интернет-маркетинг:
+  - Интернет-маркетинг/index.md
+  - Анкор: Интернет-маркетинг/Анкор.md
+  - Взломанный аккаунт: Интернет-маркетинг/Взломанный аккаунт.md
+  - CallTouch: Интернет-маркетинг/CallTouch.md
+- Хостинг:
+  - Хостинг/index.md
+  - Как подобрать хостинг для Drupal: Хостинг/dji_air3s.md
+  - Хостинг для CS-Cart: Хостинг/Хостинг для CS-Cart.md
+  - Хостинг для MODX: Хостинг/Хостинг для MODX.md
+  - Хостинг для Prestashop: Хостинг/Хостинг для Prestashop.md
+  - Хостинг для WordPress: Хостинг/Хостинг для WordPress.md
+
+extra:
+  social:
+  # Ссылки на соц.сети
+  - icon: fontawesome/brands/github-alt # Иконка гитхаба
+    link: https://github.com/vadimastashin # Ссылка на гитхаб
+
+markdown_extensions:
+# Расширения markdown
+- admonition # Поддержка информационных панелей (сообщений типа «Внимание», «Совет», «Примечание», etc.)
+- footnotes # Поддержка встроенных сносок на страницах
+- attr_list # Использование html-атрибутов и CSS в элементах markdown
+- md_in_html # Поддержка markdown внутри html
+- def_list # Поддержка списков определений
+- pymdownx.tabbed # Использование вкладок (табов)
+- pymdownx.details # Использование спойлеров (катов)
+- pymdownx.highlight:
+    # Подсветка синтаксиса в блоках кода
+    anchor_linenums: true
+- pymdownx.superfences # Поддержка вложенных блоков кода
+- pymdownx.snippets # Использование заимствованного контента
+- pymdownx.emoji:
+    # Иконки и эмодзи
+    emoji_index: !!python/name:material.extensions.emoji.twemoji ""
+    emoji_generator:
+
+      !!python/name:material.extensions.emoji.to_svg ""
+copyright: |
+  &copy; 2025 ВАДИМ АСТАШИН
